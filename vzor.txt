@@ -1,0 +1,57 @@
+        <div class="slider_box__slide">
+            <div class="slider_box__slide__headline_box">
+                <div class="slider_box__slide__headline_box__next_btn"></div> <!-- Hidden until DESKTOP -->
+                <h1 class="slider_box__slide__headline_box__title">Morning hygiene</h1>
+                <div class="slider_box__slide__headline_box__prev_btn"></div> <!-- Hidden until DESKTOP -->
+            </div>
+            <div class="slider_box__slide__text_box">
+                <h2 class="slider_box__slide__text_box__headline">Conditions:</h2>
+                <p class="slider_box__slide__text_box__text">I will not leave the dining table if i did not drink whole glass of water.</p>
+            </div>
+            <div class="slider_box__slide__flexbox">
+                <div class="slider_box__slide__flexbox__box">
+                    <h2>cue</h2>
+                    <p>Stepping out of the bedroom.</p>
+                </div> <!-- slider_box__slide__flexbox__box -->         
+                <div class="slider_box__slide__flexbox__box">
+                    <h2>craving</h2>
+                    <p>Hygiene, a feeling of freshness and awakening</p>
+                </div> <!-- slider_box__slide__flexbox__box -->                
+                <div class="slider_box__slide__flexbox__box">
+                    <h2>response</h2>
+                    <ol>
+                        <li>Open window in office</li>
+                        <li>Go to the bathroom sink</li>
+                        <li>Wash off my face</li>
+                        <li>Brush my teeth</li>
+                    </ol>
+                </div> <!-- slider_box__slide__flexbox__box -->               
+                <div class="slider_box__slide__flexbox__box">
+                    <h2>REWARD</h2>
+                    <p>Hydration, awakening, energizing, confirming the beginning of the morning routine</p>
+                </div> <!-- slider_box__slide__flexbox__box -->
+            </div> <!-- slider_box__slide__flexbox -->
+
+            <div class="slider_box__slide__grid">
+                <div class="slider_box__slide__grid__box">
+                    <h2></h2>
+                    <p></p>
+                </div> <!-- slider_box__slide__grid__box -->                
+                <div class="slider_box__slide__grid__box">
+                    <h2></h2>
+                    <p></p>
+                </div> <!-- slider_box__slide__grid__box -->                
+                <div class="slider_box__slide__grid__box">
+                    <h2></h2>
+                    <p></p>
+                </div> <!-- slider_box__slide__grid__box -->                
+                <div class="slider_box__slide__grid__box">
+                    <h2></h2>
+                    <p></p>
+                </div> <!-- slider_box__slide__grid__box -->
+                <div class="slider_box__slide__grid__box">
+                    <h2></h2>
+                    <p></p>
+                </div> <!-- slider_box__slide__grid__box -->
+            </div> <!-- slider_box__slide__grid -->
+        </div> <!-- slider_box__slide -->
