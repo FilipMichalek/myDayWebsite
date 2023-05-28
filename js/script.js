@@ -1,5 +1,5 @@
 function goBack() {
-    window.history.back(); 
+  window.history.back(); 
 }
 
 window.addEventListener("scroll", function() {

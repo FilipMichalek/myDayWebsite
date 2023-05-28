@@ -42,6 +42,14 @@ morningSliderBox.addEventListener('scroll', () => {
   });
 
 
+// Resizing the slider
+
+window.addEventListener('resize', function() {
+  const slider = document.getElementById('morning_slider_box');
+  slider.click();
+});
+
+
 
 
 
