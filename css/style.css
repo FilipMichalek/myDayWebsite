@@ -480,5 +480,14 @@ nav a {
     transform: translateY(-100%); }
   to {
     transform: translateY(0); } }
+@keyframes holding-animation {
+  0% {
+    transform: scale(1); }
+  50% {
+    transform: scale(1.1); }
+  100% {
+    transform: scale(1); } }
+.counter_circle.holding {
+  animation: holding-animation 1s infinite; }
 
 /*# sourceMappingURL=style.css.map */

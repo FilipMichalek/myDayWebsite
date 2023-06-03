@@ -94,3 +94,30 @@ window.addEventListener('resize', function() {
   const slider = document.getElementById('evening_slider_box');
   slider.click();
 });
+
+
+// reset slider counter by holding
+window.addEventListener('DOMContentLoaded', () => {
+  const holdDiv = document.getElementById("evening_counter_circle");
+  let holdTimer;
+
+  function startHold() {
+    holdTimer = setTimeout(() => {
+      localStorage.clear();
+      location.reload(); // Refresh the page after clearing localStorage
+    }, 3000); // Set the hold duration in milliseconds (adjust as needed)
+
+    holdDiv.classList.add('holding'); // Add the class for the animation
+  }
+
+  function endHold() {
+    clearTimeout(holdTimer);
+    holdDiv.classList.remove('holding'); // Remove the class for the animation
+  }
+
+  holdDiv.addEventListener('mousedown', startHold);
+  holdDiv.addEventListener('touchstart', startHold);
+
+  holdDiv.addEventListener('mouseup', endHold);
+  holdDiv.addEventListener('touchend', endHold);
+});
