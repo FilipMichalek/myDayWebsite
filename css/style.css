@@ -53,12 +53,12 @@
       display: flex;
       justify-content: space-between;
       width: 70px;
-      position: relative; }
+      position: relative;
+      user-select: none; }
       .header .counter_circle__text_box p {
         color: white;
         margin-top: 40px;
-        pointer-events: none;
-        user-select: none; }
+        pointer-events: none; }
       .header .counter_circle__text_box__slash {
         position: absolute;
         text-align: center;
