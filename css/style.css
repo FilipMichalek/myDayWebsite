@@ -54,7 +54,15 @@
       justify-content: space-between;
       width: 70px;
       position: relative;
-      user-select: none; }
+      -webkit-user-select: none;
+      /* Safari */
+      -moz-user-select: none;
+      /* Firefox */
+      -ms-user-select: none;
+      /* IE/Edge */
+      user-select: none;
+      -webkit-touch-callout: none;
+      /* Disable long press context menu on mobile */ }
       .header .counter_circle__text_box p {
         color: white;
         margin-top: 40px;
