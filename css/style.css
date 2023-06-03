@@ -57,7 +57,8 @@
       .header .counter_circle__text_box p {
         color: white;
         margin-top: 40px;
-        pointer-events: none; }
+        pointer-events: none;
+        user-select: none; }
       .header .counter_circle__text_box__slash {
         position: absolute;
         text-align: center;
