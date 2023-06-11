@@ -94,3 +94,55 @@ window.addEventListener('resize', function() {
   const slider = document.getElementById('morning_slider_box');
   slider.click();
 });
+
+
+
+
+
+
+
+// reset slider counter by holding
+window.addEventListener('DOMContentLoaded', () => {
+  const morningDivTextbox = document.getElementById("evening_counter_circle__text_box");
+  const morningHoldDiv = document.getElementById("evening_counter_circle");
+  let holdTimer;
+
+  function startHold() {
+    holdTimer = setTimeout(() => {
+      localStorage.clear();
+      location.reload(); // Refresh the page after clearing localStorage
+    }, 3000); // Set the hold duration in milliseconds (adjust as needed)
+
+    morningDivTextbox.classList.add('holding'); // Add the class for the animation
+  }
+
+  function endHold() {
+    clearTimeout(holdTimer);
+    morningDivTextbox.classList.remove('holding'); // Remove the class for the animation
+  }
+
+  morningHoldDiv.addEventListener('mousedown', startHold);
+  morningHoldDiv.addEventListener('touchstart', startHold);
+
+  morningHoldDiv.addEventListener('mouseup', endHold);
+  morningHoldDiv.addEventListener('touchend', endHold);
+
+});
+
+
+
+// clear local storage at a specific time of the day
+function clearLocalStorageAtTime(hour, minute) {
+  setInterval(() => {
+    const now = new Date();
+    const currentHour = now.getHours();
+    const currentMinute = now.getMinutes();
+
+    if (currentHour === hour && currentMinute === minute) {
+      localStorage.clear();
+    }
+  }, 60000); // Check every minute
+}
+
+// Usage example: Clear localStorage at 8:30 AM
+clearLocalStorageAtTime(0, 20);
